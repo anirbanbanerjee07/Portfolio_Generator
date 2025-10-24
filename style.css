@@ -1,0 +1,130 @@
+:root {
+  --bg-color: #1e1e2f;
+  --card-bg: #2c2c44;
+  --text-color: #fff;
+  --accent: #00c896;
+  --input-bg: #35355a;
+}
+
+.light-mode {
+  --bg-color: #f4f4f4;
+  --card-bg: #fff;
+  --text-color: #222;
+  --accent: #0077cc;
+  --input-bg: #e8e8e8;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 30px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+#themeToggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.container {
+  max-width: 900px;
+  margin: 70px auto 0;
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: var(--input-bg);
+  color: var(--text-color);
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.profile-card {
+  background: linear-gradient(135deg, var(--card-bg), var(--accent));
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-card img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: var(--input-bg);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: bold;
+}
