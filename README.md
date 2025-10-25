@@ -25,3 +25,6 @@ Just enter your GitHub username, and it fetches your info & top repositories usi
    ```bash
    git clone https://github.com/your-username/portfolio-generator.git
    cd portfolio-generator
+
+
+## 
